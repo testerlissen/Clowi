@@ -1,0 +1,137 @@
+@import "../../index.sass"
+    
+.header
+    width: 100%
+    padding: 2rem 2% 1.5rem 2%
+    display: flex
+    align-items: center
+    border: none
+    position: fixed
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 100
+    backdrop-filter: blur(13px)
+    -webkit-backdrop-filter: blur(13px)
+    background: rgba(16, 16, 14, .4)
+    background-image: url("./public/Noise&Texture.png")
+    background-repeat: no-repeat
+    background-size: cover
+
+.wrapper
+    margin: 0 auto
+
+.navigation
+    position: relative
+    display: flex
+
+.item
+    display: flex
+    flex-direction: column
+    list-style-type: none
+    font-family: "Geist-Light"
+    font-size: 1.8rem
+    text-decoration: none
+    color: $color-beige
+    transition: all .2s
+    position: relative
+    white-space: nowrap
+    &:not(:last-child)
+        margin-right: 5rem
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: .3rem
+        width: 100%
+        height: .1rem
+        background: white
+        border-radius: 4rem
+        transform: scaleX(0)
+        transform-origin: right
+        transition: transform .3s
+    &:hover::after
+        background: $color-beige
+        transform-origin: left
+        transform: scaleX(1)
+
+
+.headerBtn
+    display: flex
+    align-items: center
+    list-style-type: none
+    font-family: "Geist-Light"
+    font-size: 1.8rem
+    text-decoration: none
+    color: $color-beige
+    transition: all .2s
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: .3rem
+        width: 100%
+        height: .1rem
+        background: white
+        border-radius: 4rem
+        transform: scaleX(0)
+        transform-origin: right
+        transition: transform .3s
+    &:hover::after
+        background: $color-beige
+        transform-origin: left
+        transform: scaleX(1)
+        
+
+.btnWrapper
+    display: flex
+    align-items: center
+
+.arrow
+    margin-left: .6rem
+
+.link
+    text-decoration: none
+    color: $color-beige
+
+.btnLogin
+    font-family: "Geist-Regular"
+    font-size: 1.6rem
+    background: none
+    color: $color-gray
+    border: none
+    margin-right: 2.2rem
+    transition: all .3s
+    height: 2rem
+    &:hover
+        color: $color-beige
+
+.btnSignUp
+    font-family: "Geist-Regular"
+    font-size: 1.6rem
+    padding: .8rem 2.6rem
+    background: none
+    border-radius: 50rem
+    border: .1rem solid $color-beige
+    color: $color-beige
+    transition: all .3s
+    &:hover
+        background: $color-beige
+        color: $background
+
+.list
+    position: relative
+    list-style-type: none
+    left: 1rem
+    margin-top: 1.4rem
+
+.menuItem
+    transition: all .3s
+    &:not(:last-child)
+        margin-bottom: 1.2rem
+    &:hover
+        transform: translateX(.3rem)
+    
+.menuArrow
+    margin-left: .8rem

@@ -1,0 +1,29 @@
+@import "../../index.sass"
+@import "../Btn.module.sass"
+
+.colorName
+    font-family: "Geist-Light"
+    font-size: 1.8rem
+    text-transform: uppercase
+    padding: .5rem 1rem 
+    display: flex
+    justify-content: end
+    align-items: end
+    position: relative
+    list-style-type: none
+    width: 19.75%
+    // width: 20.8rem
+    height: 8.5rem
+    border-radius: .5rem
+    cursor: pointer
+    transition: all .3s
+    &:hover
+        transform: translateY(-.3rem)
+
+.span
+    color: $color-beige
+    // filter: invert(1)
+    &::before
+        mix-blend-mode: screen
+    &::after
+        mix-blend-mode: difference

@@ -1,0 +1,39 @@
+@import "../../index.sass"
+    
+.footer
+    width: 96%
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(7, minmax(26rem, 1fr))
+    margin-bottom: 4.5rem
+
+.other
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.name
+    font-family: "Geist-Light"
+    font-size: 1.6rem
+    text-transform: uppercase
+
+.logo
+    font-family: "Geist-Black"
+    font-size: 1.6rem
+    text-transform: uppercase
+
+.title
+    font-family: "Geist-SemiBold"
+    font-weight: 600
+    font-size: 1.6rem
+    margin-bottom: 1.5rem
+
+.list
+    list-style-type: none
+
+.item
+    font-family: "Geist-Light"
+    font-size: 1.6rem
+    color: $color-gray
+    &:not(:last-child)
+        margin-bottom: 1rem

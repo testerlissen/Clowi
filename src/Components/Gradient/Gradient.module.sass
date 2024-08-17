@@ -1,0 +1,113 @@
+@import "../../index.sass"
+@import "../Btn.module.sass"
+
+.section
+    width: 100%
+    height: 100vh
+    margin-bottom: 10rem
+
+.wrapper
+    width: 82%
+    margin: 0 auto
+    margin-top: 23rem
+
+.colorWrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 1.5rem
+    padding: 0 1.8rem
+    position: relative
+    height: 2.5rem
+
+.colorText
+    font-family: "Geist-Light"
+    font-size: 2rem
+    text-transform: uppercase
+    margin-left: .8rem
+
+.border
+    background: none
+    width: 2rem
+    height: 2rem
+    border: .1rem solid $color-white
+    border-radius: .4rem
+    z-index: 1
+    transition: all .3s
+    &:hover
+        scale: 1.2
+
+.colorPicker
+    display: flex
+    align-items: center
+    transform: translateY(-.2rem)
+    z-index: 2
+
+.colorPicker_control
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    width: 1.8rem
+    height: 2.2rem
+    background-color: transparent
+    border: none
+    cursor: pointer
+    transform: translateY(-.2rem)
+    transition: all .3s
+    &:hover
+        scale: 1.1
+
+.colorPicker_control::-webkit-color-swatch 
+    border-radius: .2rem
+    border: none
+
+.colorPicker_control::-moz-color-swatch 
+    border-radius: 15px
+    border: none
+
+.gradient
+    width: 100%
+    height: 32rem
+    border-radius: 1rem
+    margin-bottom: 2rem
+
+.btnWrapper
+    display: flex
+    align-items: center
+    margin-bottom: 10rem
+
+.btn1
+    margin-right: 3.8rem
+
+.btn2
+    margin-right: 3.8rem
+
+.arrows
+    display: flex
+    align-items: center
+
+.arrow
+    opacity: .5
+    transition: all .1s
+    cursor: pointer
+    &:not(:last-child)
+        margin-right: 1.8rem
+    &:hover
+        opacity: 1
+
+.active
+    opacity: 1
+        
+.codeWrapper
+    width: 62rem
+    height: 9.6rem
+
+.code
+    width: 100%
+    height: 100%
+    background: $background
+    border: none
+    resize: none
+
+.output
+    background: none
